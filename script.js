@@ -51,3 +51,32 @@ if (pizza === 'Papa Johns'){
 } else {
   console.log('what are you even doing with your life?')
 }
+
+let day
+if (day === 'Saturday' || day === 'Sunday') {
+  console.log('It is the weekend')
+}
+
+day === 'Saturday' ? 'It is the best day of the week' : 'Almost my favorite day'
+
+let age 
+
+function whatToDo(age){
+  let age = Number(document.querySelector('input').value)
+  if (age < 16){
+    console.log('You cannot drive')
+  } else if (age < 18){
+    console.log("can't hate from outside the club if you can't even get in")
+  } else if(age < 21){
+    console.log('you cannot drink')
+  } else if (age < 25){
+    console.log('cannot rent cars affordably')
+  } else if(age < 30){
+    console.log('cannot rent fancy cars afforably')
+  } else {
+    console.log('there is nothing else to look forward too')
+  }
+}
+
+document.querySelector('h1').addEventListener('click',whatToDo)
+
